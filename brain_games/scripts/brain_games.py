@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-def start():
+
+def greeting():
     print('Welcome to the Brain Games!')
 
 
 def main():
-    start()
+    greeting()
 
 
 if __name__ == '__main__':
