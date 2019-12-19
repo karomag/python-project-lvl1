@@ -4,6 +4,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -99,6 +100,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*setup.cfg
 MANIFEST
 
 # PyInstaller
@@ -201,5 +203,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-.idea/
