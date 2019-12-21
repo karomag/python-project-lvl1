@@ -1,3 +1,7 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/d5fbab6a0840ca2b52cf/maintainability)](https://codeclimate.com/github/karomag/python-project-lvl1/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d5fbab6a0840ca2b52cf/test_coverage)](https://codeclimate.com/github/karomag/python-project-lvl1/test_coverage)
+[![Build Status](https://travis-ci.org/karomag/python-project-lvl1.svg?branch=master)](https://travis-ci.org/karomag/python-project-lvl1)
+
 # Проект Игры разума
 
 ## Описание проекта
