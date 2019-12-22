@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+"""Command line tools."""
+
 import prompt
 
 

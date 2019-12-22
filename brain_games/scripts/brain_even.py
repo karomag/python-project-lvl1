@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""Brain games: Even."""
 from brain_games.cli import run
 
 
