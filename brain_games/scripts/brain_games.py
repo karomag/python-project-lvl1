@@ -5,15 +5,9 @@
 from brain_games.cli import run
 
 
-def greeting():
-    """Вывод приветсвия при запуске игры."""
-    print('Welcome to the Brain Games!\n')
-
-
 def main():
     """Основная функция модуля."""
-    greeting()
-    run()
+    run('')
 
 
 if __name__ == '__main__':

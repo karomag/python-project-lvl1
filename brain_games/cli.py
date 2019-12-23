@@ -5,13 +5,20 @@
 import prompt
 
 
-def run():
+def run(str_rules):
     """Запрашивает имя пользователя и возвращает строку приветсвия.
+
+    Args:
+        str_rules: string with game rules
 
     Returns:
         user_name - имя введенное пользователем
     """
-    return prompt.string('May I have your name? ')
+    print('Welcome to the Brain Games!')
+    print()
+    user_name = prompt.string('May I have your name? ')
+    print('Hello, {0}!\n'.format(user_name))
+    return user_name
 
 
 def get_user_answer():
@@ -21,3 +28,15 @@ def get_user_answer():
         answer - ответ введенный пользователем
     """
     return prompt.string('Your answer: ')
+
+
+def ask_question(task):
+    """Выводит в консоль вопрос с заданием для пользователя.
+
+    Args:
+        task: task for user
+
+    Returns:
+        answer - user's answer
+    """
+    return print('Question:', task)

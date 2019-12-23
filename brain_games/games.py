@@ -4,7 +4,7 @@
 
 from random import SystemRandom
 
-from brain_games.cli import get_user_answer, run
+from brain_games import cli
 
 
 def random_question_number():
@@ -22,7 +22,8 @@ def random_question_number():
 def is_even(number):
     """Проверяет число на четность.
 
-    :param int number:
+    Args:
+         number: число на проверку
 
     Returns:
         'yes' if number is even, else 'no'
@@ -34,14 +35,12 @@ def is_even(number):
 
 def run_game_even():
     """Запуск игры brain-even."""
-    print('Welcome to the Brain Games!')
-    print('Answer "yes" if number even otherwise answer "no".\n')
-    user_name = run()
-    print('Hello, {0}!\n'.format(user_name))
+    str_rules = 'Answer "yes" if number even otherwise answer "no".'
+    user_name = cli.run(str_rules)
     for _ in range(3):
         question_number = random_question_number()
-        print('Question:', question_number)
-        user_answer = get_user_answer()
+        cli.ask_question(question_number)
+        user_answer = cli.get_user_answer()
         correct_answer = is_even(question_number)
         if correct_answer == user_answer:
             print('Correct!')
