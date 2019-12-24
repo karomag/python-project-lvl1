@@ -2,12 +2,12 @@
 
 """Brain games: Even."""
 
-from brain_games.games import run_game_even
+from brain_games.games.even import run
 
 
 def main():
     """Основная функция модуля."""
-    run_game_even()
+    run()
 
 
 if __name__ == '__main__':

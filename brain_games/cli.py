@@ -5,20 +5,20 @@
 import prompt
 
 
-def run(str_rules):
+def run(settings=None):
     """Запрашивает имя пользователя и возвращает строку приветсвия.
 
     Args:
-        str_rules: string with game rules
-
-    Returns:
-        user_name - имя введенное пользователем
+        settings: dic{rules:str, user:str}
     """
+    if settings is None:
+        settings = {'rules': '', 'user': ''}
     print('Welcome to the Brain Games!')
+    print(settings['rules'])
     print()
     user_name = prompt.string('May I have your name? ')
-    print('Hello, {0}!\n'.format(user_name))
-    return user_name
+    settings['user'] = user_name
+    print('Hello, {0}!\n'.format(settings['user']))
 
 
 def get_user_answer():
@@ -30,13 +30,42 @@ def get_user_answer():
     return prompt.string('Your answer: ')
 
 
-def ask_question(task):
+def print_question(task):
     """Выводит в консоль вопрос с заданием для пользователя.
 
     Args:
         task: task for user
+    """
+    print('Question:', task)
+
+
+def print_congratulations(user_name):
+    """Выводит в консоль поздравление пользователя с победой.
+
+    Args:
+        user_name: user name
+    """
+    print('Congratulations, {0}!'.format(user_name))
+
+
+def check_answer_mistake(user_name, user_answer, correct_answer):
+    """Сравнивает ответ пользователя с правильным.
+
+    Args:
+        user_name: user name
+        user_answer: user answer
+        correct_answer: correct answer
 
     Returns:
-        answer - user's answer
+        checking_result: result of checking
     """
-    return print('Question:', task)
+    if correct_answer == user_answer:
+        print('Correct!')
+        return False
+
+    print(
+        "'{0}' is wrong answer;(. Correct answer was '{1}'.".
+        format(user_answer, correct_answer),
+    )
+    print("Let's try again, {0}!".format(user_name))
+    return True

@@ -7,7 +7,7 @@ from brain_games.cli import run
 
 def main():
     """Основная функция модуля."""
-    run('')
+    run()
 
 
 if __name__ == '__main__':

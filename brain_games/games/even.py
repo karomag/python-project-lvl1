@@ -33,23 +33,20 @@ def is_even(number):
     return 'no'
 
 
-def run_game_even():
+def run():
     """Запуск игры brain-even."""
-    str_rules = 'Answer "yes" if number even otherwise answer "no".'
-    user_name = cli.run(str_rules)
+    settings = {
+        'rules': 'Answer "yes" if number even otherwise answer "no".',
+        'user': '',
+    }
+    cli.run(settings)
+    user_name = settings.get('user', '')
     for _ in range(3):
         question_number = random_question_number()
-        cli.ask_question(question_number)
+        cli.print_question(question_number)
         user_answer = cli.get_user_answer()
         correct_answer = is_even(question_number)
-        if correct_answer == user_answer:
-            print('Correct!')
-        else:
-            print(
-                "'{0}' is wrong answer;(. Correct answer was '{1}'.".
-                format(user_answer, correct_answer),
-            )
-            print("Let's try again, {0}!".format(user_name))
+        if cli.check_answer_mistake(user_name, user_answer, correct_answer):
             break
     else:
-        print('Congratulations, {0}!'.format(user_name))
+        cli.print_congratulations(user_name)
