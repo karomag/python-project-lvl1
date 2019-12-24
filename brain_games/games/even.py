@@ -1,22 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""Games."""
-
-from random import SystemRandom
+"""Games Even."""
 
 from brain_games import cli
-
-
-def random_question_number():
-    """Возвращает случайное целое число из диапозона.
-
-    Returns:
-        int[min_number, max_number]
-    """
-    min_number = 1
-    max_number = 100
-    crypto = SystemRandom()
-    return crypto.randint(min_number, max_number)
+from brain_games.secfunc import random_number
 
 
 def is_even(number):
@@ -42,11 +29,11 @@ def run():
     cli.run(settings)
     user_name = settings.get('user', '')
     for _ in range(3):
-        question_number = random_question_number()
+        question_number = random_number()
         cli.print_question(question_number)
         user_answer = cli.get_user_answer()
-        correct_answer = is_even(question_number)
-        if cli.check_answer_mistake(user_name, user_answer, correct_answer):
+        answer = is_even(question_number)
+        if cli.check_answer_mistake(user_name, user_answer, answer):
             break
     else:
         cli.print_congratulations(user_name)

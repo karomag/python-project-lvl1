@@ -13,11 +13,11 @@ def run(settings=None):
     """
     if settings is None:
         settings = {'rules': '', 'user': ''}
+
     print('Welcome to the Brain Games!')
     print(settings['rules'])
     print()
-    user_name = prompt.string('May I have your name? ')
-    settings['user'] = user_name
+    settings['user'] = prompt.string('May I have your name? ')
     print('Hello, {0}!\n'.format(settings['user']))
 
 
@@ -30,13 +30,14 @@ def get_user_answer():
     return prompt.string('Your answer: ')
 
 
-def print_question(task):
+def print_question(*args):
     """Выводит в консоль вопрос с заданием для пользователя.
 
     Args:
-        task: task for user
+        *args: Task for user.
     """
-    print('Question:', task)
+    print('Question:', end=' ')
+    print(*args)
 
 
 def print_congratulations(user_name):
