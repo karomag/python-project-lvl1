@@ -17,7 +17,7 @@ def run(str_rules):
     print('Welcome to the Brain Games!')
     print()
     user_name = prompt.string('May I have your name? ')
-    print(f'Hello, {user_name}!\n')
+    print('Hello, {0}!\n'.format(user_name))
     return user_name
 
 
