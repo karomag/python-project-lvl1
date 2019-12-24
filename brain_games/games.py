@@ -46,10 +46,9 @@ def run_game_even():
             print('Correct!')
         else:
             print(
-                "'{0}' is wrong answer;(. Correct answer was '{1}'.".
-                format(user_answer, correct_answer),
+                f"'{user_answer}' is wrong answer;(. Correct answer was '{correct_answer}'.",
             )
-            print("Let's try again, {0}!".format(user_name))
+            print(f"Let's try again, {user_name}!")
             break
     else:
-        print('Congratulations, {0}!'.format(user_name))
+        print(f'Congratulations, {user_name}!')
