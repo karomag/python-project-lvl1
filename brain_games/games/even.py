@@ -30,7 +30,7 @@ def run():
     user_name = settings.get('user', '')
     for _ in range(3):
         question_number = random_number()
-        cli.print_question(question_number)
+        cli.print_question([question_number])
         user_answer = cli.get_user_answer()
         answer = is_even(question_number)
         if cli.check_answer_mistake(user_name, user_answer, answer):

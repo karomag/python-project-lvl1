@@ -35,7 +35,7 @@ def run():
         question_number1 = random_number()
         question_number2 = random_number()
         operate = random_operate()
-        cli.print_question(question_number1, operate, question_number2)
+        cli.print_question([question_number1, operate, question_number2])
 
         mistake = cli.check_answer_mistake(
             settings['user'],

@@ -30,14 +30,14 @@ def get_user_answer():
     return prompt.string('Your answer: ')
 
 
-def print_question(*args):
+def print_question(lst):
     """Выводит в консоль вопрос с заданием для пользователя.
 
     Args:
-        *args: Task for user.
+        lst: args for task for user.
     """
     print('Question:', end=' ')
-    print(*args)
+    print(*lst)
 
 
 def print_congratulations(user_name):
