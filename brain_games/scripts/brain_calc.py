@@ -2,12 +2,13 @@
 
 """Brain games: Calc."""
 
-from brain_games.games.brain_calc import run
+from brain_games.engine import run
+from brain_games.games import calc
 
 
 def main():
-    """Основная функция модуля."""
-    run()
+    """Run game."""
+    run(calc)
 
 
 if __name__ == '__main__':
