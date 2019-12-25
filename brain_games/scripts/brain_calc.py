@@ -2,7 +2,7 @@
 
 """Brain games: Calc."""
 
-from brain_games.games.calc import run
+from brain_games.games.brain_calc import run
 
 
 def main():

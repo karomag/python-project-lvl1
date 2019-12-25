@@ -2,7 +2,7 @@
 
 """Brain games: Even."""
 
-from brain_games.games.even import run
+from brain_games.games.brain_even import run
 
 
 def main():
