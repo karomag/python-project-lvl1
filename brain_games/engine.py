@@ -36,6 +36,11 @@ def random_operate(seq):
     return crypto.choice(seq)
 
 
+def welcome(description):
+    print('Welcome to the Brain Games!')
+    print(description, '\n')
+
+
 def run(game=None):
     """Run game.
 
@@ -44,14 +49,11 @@ def run(game=None):
     """
     if game is None:
         return
-
-    print('Welcome to the Brain Games!')
-    print(game.DESCRIPTION, '\n')
+    welcome(game.DESCRIPTION)
     user_name = get_user_name()
     print('Hello, {0}!\n'.format(user_name))
-
     for _ in range(ROUNDS):
-        question, correct_answer = game.get_game_task()
+        (question, correct_answer) = game.get_game_task()
         print('Question:', *question)
         user_answer = get_user_answer()
         if correct_answer == user_answer:
