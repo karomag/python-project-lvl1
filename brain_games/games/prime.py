@@ -16,14 +16,10 @@ def correct_answer(number):
     Returns:
          (str): 'yes' if number is prime else 'no'
     """
-    if number % 2 == 0:
-        if number == 2:
-            return'yes'
-    division = 3
-    sqr_division = division ** 2
-    while sqr_division <= number and number % division != 0:
-        division += 2
-    if sqr_division > number:
+    division = 2
+    while number % division != 0:
+        division += 1
+    if division == number:
         return 'yes'
     return 'no'
 
