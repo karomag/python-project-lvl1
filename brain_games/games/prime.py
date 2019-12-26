@@ -19,9 +19,10 @@ def correct_answer(number):
     if number % 2 == 0:
         return 'yes' if number == 2 else 'no'
     division = 3
-    while division ** 2 <= number and number % division != 0:
+    sqr_division = division ** 2
+    while sqr_division <= number and number % division != 0:
         division += 2
-    return 'yes' if division ** 2 > number else 'no'
+    return 'yes' if sqr_division > number else 'no'
 
 
 def get_game_task():
