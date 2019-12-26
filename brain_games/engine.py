@@ -37,6 +37,11 @@ def random_operate(seq):
 
 
 def welcome(description):
+    """Print welcome message.
+
+    Args:
+        description: game description
+    """
     print('Welcome to the Brain Games!')
     print(description, '\n')
 
@@ -53,7 +58,7 @@ def run(game=None):
     user_name = get_user_name()
     print('Hello, {0}!\n'.format(user_name))
     for _ in range(ROUNDS):
-        (question, correct_answer) = game.get_game_task()
+        question, correct_answer = game.get_game_task()
         print('Question:', *question)
         user_answer = get_user_answer()
         if correct_answer == user_answer:
@@ -62,6 +67,5 @@ def run(game=None):
             template = "'{0}' is wrong answer;(. Correct answer was '{1}'."
             print(template.format(user_answer, correct_answer))
             print("Let's try again, {0}!".format(user_name))
-            break
-    else:
-        print('Congratulations, {0}!'.format(user_name))
+            return
+    print('Congratulations, {0}!'.format(user_name))
