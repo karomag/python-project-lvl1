@@ -7,6 +7,8 @@
 ## Description
 A set of mini-games launched from the console.
 
+* [Links](#Links)
+
 #### Game "Parity Check"
 The user is shown a random number. And he needs to answer yes if the number is even, or no if it is odd.
 
