@@ -13,33 +13,33 @@ A set of mini-games launched from the console.
 * ["Arithmetic progression"](#game-arithmetic-progression)
 * ["Is the number prime?](#game-is-the-number-prime)
 
-#### Game "Parity Check"
+### brain-even
 The user is shown a random number. And he needs to answer yes if the number is even, or no if it is odd.
 
-[![asciicast](https://asciinema.org/a/ArQFnFV6TzDWXifHqaBrVAdM2.svg)](https://asciinema.org/a/ArQFnFV6TzDWXifHqaBrVAdM2)
+[![asciicast](https://asciinema.org/a/sforN0GjemIIZLia61c5N0U96.svg)](https://asciinema.org/a/sforN0GjemIIZLia61c5N0U96)
 
-#### Game "Calculator"
+### brain-calc
 The user is shown a random mathematical expression, for example 35 + 16, which needs to be calculated and written down the correct answer.
 
-TODO: asciinema
+[![asciicast](https://asciinema.org/a/iv2bQfbew2zxZRRUPVmzVpLee.svg)](https://asciinema.org/a/iv2bQfbew2zxZRRUPVmzVpLee)
 
-#### Game "Greatest common divisor"
+### brain-gcd
 
 The user is shown two random numbers, for example, 25 50. The user must calculate and enter the largest common divisor of these numbers.
 
-TODO: asciinema
+[![asciicast](https://asciinema.org/a/tUoJlfJSN3arSi9fL3v34B2e6.svg)](https://asciinema.org/a/tUoJlfJSN3arSi9fL3v34B2e6)
 
-#### Game "Arithmetic progression"
+### brain-progression
 
 It shows the player a series of numbers forming an arithmetic progression, replacing any of the numbers with two points. The player must determine this number.
 
-TODO: asciinema
+[![asciicast](https://asciinema.org/a/qZyk9Nbv8xVW1gezWfsF1R4qp.svg)](https://asciinema.org/a/qZyk9Nbv8xVW1gezWfsF1R4qp)
 
-#### Game "Is the number prime?"
+### brain-prime
 
  The user is shown a random number. And he needs to answer yes if the number is prime, or no if it is not.
 
-TODO: asciinema
+[![asciicast](https://asciinema.org/a/S6iScYVjgANPA9hjyGSwE52To.svg)](https://asciinema.org/a/S6iScYVjgANPA9hjyGSwE52To)
 
 ---
 
