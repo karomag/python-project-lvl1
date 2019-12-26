@@ -17,12 +17,15 @@ def correct_answer(number):
          (str): 'yes' if number is prime else 'no'
     """
     if number % 2 == 0:
-        return 'yes' if number == 2 else 'no'
+        if number == 2:
+            return'yes'
     division = 3
     sqr_division = division ** 2
     while sqr_division <= number and number % division != 0:
         division += 2
-    return 'yes' if sqr_division > number else 'no'
+    if sqr_division > number:
+        return 'yes'
+    return 'no'
 
 
 def get_game_task():
