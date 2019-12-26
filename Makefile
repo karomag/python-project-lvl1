@@ -6,3 +6,6 @@ lint:
 
 build: lint
 	poetry build
+
+publish: build
+	poetry publish -r testpypi

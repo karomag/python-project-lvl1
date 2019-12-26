@@ -2,8 +2,7 @@ language: python
 python: "3.6"
 
 before_install:
-  - curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-  - export PATH=$PATH:$HOME/.poetry/bin
+  - pip install poetry
 
 # command to install dependencies
 install: make
