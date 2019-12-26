@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "karomag_brain_games"
-version = "0.6.0"
+version = "0.7.0"
 description = ""
 authors = ["karomag <roma-novikov@mail.ru>"]
 packages = [
