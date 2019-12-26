@@ -56,7 +56,8 @@ def run(game=None):
         user_answer = get_user_answer()
         if correct_answer == user_answer:
             print('Correct!')
-        else:
+            continue
+
             template = '{0} is wrong answer;(. Correct answer was {1}.'
             print(template.format(user_answer, correct_answer))
             print("Let's try again, {0}!".format(user_name))
