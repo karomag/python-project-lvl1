@@ -7,11 +7,11 @@
 ## Description
 A set of mini-games launched from the console.
 
-* ["Parity Check"](#game-parity-check)
-* ["Calculator"](#game-calculator)
-* ["Greatest common divisor"](#game-greatest-common-divisor)
-* ["Arithmetic progression"](#game-arithmetic-progression)
-* ["Is the number prime?](#game-is-the-number-prime)
+* ["Parity Check"](#brain-even)
+* ["Calculator"](#brain-calc)
+* ["Greatest common divisor"](#brain-gcd)
+* ["Arithmetic progression"](#brain-progression)
+* ["Is the number prime?](#brain-prime)
 
 ### brain-even
 The user is shown a random number. And he needs to answer yes if the number is even, or no if it is odd.
