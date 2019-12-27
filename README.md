@@ -42,7 +42,6 @@ It shows the player a series of numbers forming an arithmetic progression, repla
 [![asciicast](https://asciinema.org/a/S6iScYVjgANPA9hjyGSwE52To.svg)](https://asciinema.org/a/S6iScYVjgANPA9hjyGSwE52To)
 
 ---
-
 #### Links
 
 This project was built using these tools:
