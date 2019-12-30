@@ -2,15 +2,13 @@
 
 """Games GCD."""
 
-from math import gcd
-
-from brain_games.engine import random_number
+from brain_games.engine import generate_random_number
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def correct_answer(number1, number2):
-    """Return correct answer.
+def gcd(number1, number2):
+    """Return greatest common divisor of number1 and number2.
 
     Args:
         number1 (int): first number.
@@ -19,7 +17,9 @@ def correct_answer(number1, number2):
     Returns:
         (str): greatest common divisor of number1 and number2.
     """
-    return str(gcd(number1, number2))
+    while number2:
+        number1, number2 = number2, number1 % number2
+    return number1
 
 
 def get_game_task():
@@ -28,9 +28,9 @@ def get_game_task():
     Returns:
         (tuple): (question, correct_answer).
     """
-    question_number1 = random_number()
-    question_number2 = random_number()
+    question_number1 = generate_random_number()
+    question_number2 = generate_random_number()
     return (
-        [question_number1, question_number2],
-        correct_answer(question_number1, question_number2),
+        '{0} {1}'.format(question_number1, question_number2),
+        gcd(question_number1, question_number2),
     )
