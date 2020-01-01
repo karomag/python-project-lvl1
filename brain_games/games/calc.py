@@ -23,8 +23,8 @@ def get_game_task():
     """
     question_number1 = generate_random_number()
     question_number2 = generate_random_number()
-    operator = choice(operators)
+    operator_name, operator = choice(operators)
     return (
-        '{0} {1} {2}'.format(question_number1, operator[0], question_number2),
-        operator[1](question_number1, question_number2),
+        '{0} {1} {2}'.format(question_number1, operator_name, question_number2),
+        operator(question_number1, question_number2),
     )

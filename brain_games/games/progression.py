@@ -19,6 +19,6 @@ def get_game_task():
     progression = []
     for step in range(1, LENGTH_PROGRESSION + 1):
         progression.append(str(1 + (step - 1) * step_progression))
-    task_progression = progression[:]
-    task_progression[hidden_element_index] = '...'
-    return ' '.join(task_progression), progression[hidden_element_index]
+    hidden_element = progression[hidden_element_index]
+    progression[hidden_element_index] = '...'
+    return ' '.join(progression), hidden_element
