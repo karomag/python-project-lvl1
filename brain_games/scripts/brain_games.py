@@ -3,7 +3,7 @@
 
 """Brain games main script."""
 
-from brain_games.cli import run
+from brain_games.engine import run
 
 
 def main():
